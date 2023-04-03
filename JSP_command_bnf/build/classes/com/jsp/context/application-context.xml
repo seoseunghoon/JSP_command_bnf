@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+	<!-- datasource -->
+	<bean id="sqlSessionFactory" class="com.jsp.datasource.MySqlSessionFactory" />
+	
+	<!-- DAO -->
+	<bean id="memberDAO" class="com.jsp.dao.MemberDAOImpl" />
+	<bean id="collusionBoardDAO"  class="com.jsp.dao.CollusionBoardDAOImpl" />
+	<bean id="collusionAttachDAO" class="com.jsp.dao.CollusionAttachDAOImpl" />
+	<bean id="marketBoardDAO" class="com.jsp.dao.MarketBoardDAOImpl" />
+	<bean id="marketAttachDAO" class="com.jsp.dao.MarketAttachDAOImpl" />
+	<bean id="marketReplyDAO" class="com.jsp.dao.MarketReplyDAOImpl" />
+	
+	<bean id ="eventBoardDAO" class="com.jsp.dao.EventBoardDAOImpl" />
+	
+	<bean id="reportBoardDAO" class="com.jsp.dao.ReportBoardDAOImpl" />
+	<bean id="reportAttachDAO" class="com.jsp.dao.ReportAttachDAOImpl" />
+	
+	<bean id="citizenBoardDAO" class="com.jsp.dao.CitizenBoardDAOImpl" />
+	<bean id="citizenAttachDAO" class="com.jsp.dao.CitizenAttachDAOImpl" />
+	<bean id="complainBoardDAO" class="com.jsp.dao.ComplainBoardDAOImpl" />
+	<bean id="complainAttachDAO" class="com.jsp.dao.ComplainAttachDAOImpl" />
+	
+	<!--  service  -->
+	
+	
+	<bean id="collusionBoardService" class="com.jsp.service.CollusionBoardServiceImpl">
+		<property name="sqlSessionFactory" ref-value="sqlSessionFactory" />
+		<property name="collusionBoardDAO" ref-value="collusionBoardDAO" />
+		<property name="collusionAttachDAO" ref-value="collusionAttachDAO" />
+	</bean>
+	
+	<bean id="memberService" class="com.jsp.service.MemberServiceImpl">
+		<property name="sqlSessionFactory" ref-value="sqlSessionFactory" />
+		<property name="memberDAO" ref-value="memberDAO" />
+	</bean>
+	
+	<bean id="marketBoardService" class="com.jsp.service.MarketBoardServiceImpl">
+		<property name="sqlSessionFactory" ref-value="sqlSessionFactory" />
+		<property name="marketBoardDAO" ref-value="marketBoardDAO" />
+		<property name="marketAttachDAO" ref-value="marketAttachDAO" />
+		<property name="marketReplyDAO" ref-value="marketReplyDAO" />
+		<property name="memberDAO" ref-value="memberDAO" />
+		
+	</bean>
+	
+	<bean id="eventBoardService" class="com.jsp.service.EventBoardServiceImpl" >
+	    <property name="sqlSessionFactory"  ref-value="sqlSessionFactory"/>
+		<property name="eventBoardDAO"  ref-value="eventBoardDAO"/>       
+	</bean>
+	
+	<bean id="reportBoardService" class="com.jsp.service.ReportBoardServiceImpl">
+		<property name="sqlSessionFactory" ref-value="sqlSessionFactory" />
+		<property name="reportBoardDAO" ref-value="reportBoardDAO" />
+		<property name="reportAttachDAO" ref-value="reportAttachDAO" />
+	</bean>
+	
+	<bean id="citizenBoardService" class="com.jsp.service.CitizenBoardServiceImpl" >
+		<property name="sqlSessionFactory" ref-value="sqlSessionFactory" />
+		<property name="citizenBoardDAO" ref-value="citizenBoardDAO" />
+		<property name="citizenAttachDAO" ref-value="citizenAttachDAO" />
+	</bean>
+	<bean id="complainBoardService" class="com.jsp.service.ComplainBoardServiceImpl" >
+		<property name="sqlSessionFactory" ref-value="sqlSessionFactory" />
+		<property name="complainBoardDAO" ref-value="complainBoardDAO" />
+		<property name="complainAttachDAO" ref-value="complainAttachDAO" />
+	</bean>
+	
+	<!--  service end -->
+</beans>

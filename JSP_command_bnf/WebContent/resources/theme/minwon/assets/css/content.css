@@ -1,0 +1,591 @@
+@charset "utf-8";
+
+.p_m_bttom{margin:0 0 10px 0;}
+.p_m_bttom02{margin:10px 0 0px 0;}
+.span_m_left{padding:0 0 0 20px; display:block;}
+.btnTypeL{background: #666;}
+.pribacy{color:#0B6AAB;}
+.button.color {border:1px solid #1e4da4; color:#fff; background-color:#1e4da4;}
+.button.small, .button.medium, .button.large {font-weight:normal;}
+.btnTypeM, .btnTypeL {font-weight:normal;}
+.btnTypeS, .btnTypeM, .btnTypeL {border-radius:0;}
+.v-middle {vertical-align: middle;}
+.event_title{font-size:26px;}
+.align{text-align:center;}
+.clear{clear:left;}
+.exp120 strong{font-size:16px; color:#0169B7;}
+
+#location {position:relative; background:#fff; border-bottom:1px solid #ddd;}
+#location .locationInner {position:relative; padding:6px 0;}
+#location .locationInner:after {content:''; display:block; clear:both; font-size:0; line-height:0;}
+#location .lineMap {float:left; margin-top:4px;}
+#location .lineMap {color:#757575;}
+#location .lineMap a, #location .lineMap span {display:inline-block; vertical-align:top; padding:0 4px; color:#777;}
+#location .lineMap .home {padding-left:0;}
+#location ul.shareArea {float:right;}
+#location ul.shareArea > li {float:left; position:relative;}
+#location ul.shareArea > li > a {position:relative; display:block; width:30px; height:30px; overflow:hidden; text-indent:-9999px;}
+#location ul.shareArea > li > a:before {content:''; position:absolute; top:50%; left:50%; background:url('../../../../image/sp_ico_layout.png') no-repeat 0 9999px;}
+#location ul.shareArea > li.share > a:before {margin:-8px 0 0 -8px; width:16px; height:20px;  background-position:0 -26px;}
+#location ul.shareArea > li.print > a:before {margin:-8.5px 0 0 -9px; width:18px; height:17px; background-position:0 -54px; }
+#location ul.shareArea > li.on > a:before {display:block; content:''; position:absolute; top:50%; left:50%; width:7px; height:12px; margin:-6px 0 0 -3px; background:url('../../../../image/sp_ico_snsArrow.png') no-repeat 0 0;}
+#location ul.shareArea > li .shareBox {display:none; position:absolute; top:0; right:30px;}
+#location ul.shareArea > li.on .shareBox {display:block;}
+#location .shareBox ul.shareList  {width:120px;}
+#location .shareBox ul.shareList:after {display:block; content:''; clear:left;}
+#location .shareBox ul.shareList > li {float:left; width:30px; height:30px;}
+#location .shareBox ul.shareList > li > a {display:block; width:30px; height:28px; overflow:hidden; text-indent:-9999px;}
+#location .shareBox ul.shareList > li > a:before {display:block; content:''; width:29px; height:27px; background:url('../../../../image/sp_ico_sns.png') no-repeat 0 9999px}
+#location .shareBox ul.shareList > li.naverband a:before {background-position:0 0;}
+#location ul.shareArea > li.bookmark a:before {margin:-7.5px 0 0 -9px; width:20px; height:18px; background-position:0 -210px;}
+#location .shareBox ul.shareList > li.kakaostory a:before {background-position:-58px 0;}
+#location .shareBox ul.shareList > li.twitter a:before {background-position:-87px 0;}
+#location .shareBox ul.shareList > li.facebook a:before {background-position:-116px 0;}
+#location .shareBox ul.shareList > li.naverband a:hover:before,
+#location .shareBox ul.shareList > li.naverband a:focus:before {background-position:0 -37px;}
+#location ul.shareArea > li.bookmark a:hover:before,
+#location ul.shareArea > li.bookmark a:focus:before {background-position:0 -240px;}
+#location .shareBox ul.shareList > li.kakaostory a:hover:before,
+#location .shareBox ul.shareList > li.kakaostory a:focus:before {background-position:-58px -37px;}
+#location .shareBox ul.shareList > li.twitter a:hover:before,
+#location .shareBox ul.shareList > li.twitter a:focus:before {background-position:-87px -37px;}
+#location .shareBox ul.shareList > li.facebook a:hover:before,
+#location .shareBox ul.shareList > li.facebook a:focus:before {background-position:-116px -37px;}
+
+.titPage {padding:0 1em; clear:both; text-align:center; line-height:1.2; margin-top:2em;}
+#contents .titPage {display:none;}
+
+/* tab */
+.tabStyle li a:hover, .tabStyle li a:focus, .tabStyle li a.active, .tabStyle li.active a {border-color:#1e4da4; background-color:#1e4da4; color:#fff;}
+.tabStyle02 > li > a:hover, .tabStyle02 li > a:focus, .tabStyle02 li a.active, .tabStyle02 li.active a {background-color:#fff; border:1px solid #1e4da4; color:#1e4da4;}
+
+/* tab */
+.tabStyle2 li a:hover, .tabStyle li a:focus, .tabStyle li a.active, .tabStyle li.active a {border-color:#1e4da4; background-color:#1e4da4; color:#fff;}
+
+.tabStyle2 { overflow:hidden; padding:4px 0; margin-bottom:40px; border-bottom:1px solid #ddd;}
+.tabStyle2:after {content:""; display:block; clear:both;}
+.tabStyle2 > li { float:left; width:33.3333%; padding:1px; box-sizing:border-box; }
+.tabStyle2 > li a { display:block; width:100%; padding:10px 10px; background:#eee; border:2px solid #ddd; border-radius:3px; color:#333; font-size:110%; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; text-decoration:none; box-sizing:border-box; }
+.tabStyle2 > li a:hover, .tabStyle li a:focus, .tabStyle li a.active { border-color:#1e4da4; background-color:#1e4da4; font-weight:bold; color:#fff;}
+
+.tabStyle2 > li a{position:relative;}
+.tabStyle2 > li:first-child a:before{display:inline-block; content:"";width:30px; height:30px; background:url('../../../../image/a_icon_tel.png');position:absolute;left:10px; top:6px; }
+.tabStyle2 > li:nth-child(2) a:before{display:inline-block; content:"";width:30px; height:30px; background:url('../../../../image/a_icon_sms.png');position:absolute;left:10px; top:6px; }
+.tabStyle2 > li:nth-child(3) a:before{display:inline-block; content:"";width:30px; height:30px; background:url('../../../../image/a_icon_hand.png');position:absolute;left:10px; top:6px; }
+.tabStyle2 > li:nth-child(4) a:before{display:inline-block; content:"";width:30px; height:30px; background:url('../../../../image/a_icon_fore.png');position:absolute;left:10px; top:6px; }
+.tabStyle2 > li:nth-child(5) a:before{display:inline-block; content:"";width:30px; height:30px; background:url('../../../../image/a_icon_tv.png');position:absolute;left:10px; top:6px; }
+.tabStyle2 > li:nth-child(6) a:before{display:inline-block; content:"";width:30px; height:30px; background:url('../../../../image/a_icon_app.png');position:absolute;left:10px; top:6px; }
+.tabStyle2 > li a{padding:10px 10px 10px 51px;}
+
+.tel_step{width:100%; display:inline-block; padding:10px 0 5px 0;}
+.tel_step ul{display:inline-block; width:100%;  height: 400px;}
+.tel_step .step{float:left; width:22%; margin:0 0 0 35px; padding:10px 0 0 0; border: 1px solid #ccc; background:#f6f6f6;}
+.tel_step li:first-child{margin:0 0 0 0px;}
+.tel_step li a{display:inline-block; width:90%; text-align:center;}
+.tel_step li .tit{text-align:center; padding:10px 0; border:1px solid #555C79; border-radius:30px; background:#555C79; width:95%; color:#fff; font-size:14px; font-weight:bold;}
+
+.tel_step .step ul li:first-child{ width:50%; margin:0 auto;}
+.tel_step .step ul li:nth-child(2){float:none; padding:10px; text-align:center;}
+.tel_step li:first-child ul li:nth-child(3) img{padding:180px 0 0 0;}
+.tel_step li:nth-child(2) ul li:nth-child(3) img{padding:66px 0 0 0;}
+.tel_step li:nth-child(3) ul li:nth-child(3) img{padding:121px 0 0 0;}
+.tel_step li:nth-child(4) ul li:nth-child(3) img{padding:185px 0 0 0;}
+
+.tel_step .step ul li:nth-child(3) img{display:block; margin-left:auto; margin-right:auto;}
+
+
+.minwon {display:block;position:relative;}
+
+.minwon_time2:before{content:""; position: absolute;  left: 0; width:61px; height:61px; display:inline-block; background:url('../../../../image/icon_time.png');}
+.minwon_time2{position:relative; padding: 20px 0px 10px 85px;}
+
+.minwon_tel2:before{content:""; position: absolute;  left: 0; width:61px; height:61px; display:inline-block; background:url('../../../../image/icon_tel2.png');}
+.minwon_tel2{position:relative; padding: 20px 0px 10px 85px;}
+
+.minwon_sms2:before{content:""; position: absolute;  left: 0; width:61px; height:61px; display:inline-block; background:url('../../../../image/icon_sms2.png');}
+.minwon_sms2{position:relative; padding: 20px 0px 10px 85px;}
+
+.minwon_tv2:before{content:""; position: absolute;  left: 0; width:61px; height:61px; display:inline-block; background:url('../../../../image/icon_tv2.png');}
+.minwon_tv2{position:relative; padding: 20px 0px 10px 85px;}
+
+.fcType4 {font-size:160%;}
+
+
+/* 민원검색 */
+.searchTxtWrap {position: relative; padding-top: 80px;}
+.searchTxtWrap .topSearchBar {position:absolute; top:0; right:auto; left:50%; width:650px; margin-left:-325px;}
+.searchTxtWrap .topSearchBar .searchTxt {display:none; margin-bottom:6px; text-align:center; color:#fff; font-weight:bold;}
+.searchTxtWrap .topSearchBar .search {display:inline-block; width:530px; height:46px; vertical-align: middle;}
+.searchTxtWrap .topSearchBar .search select {position: relative; width:94px; height:100%; margin-right: -100px; padding:0 32px 0 18px; background-color:transparent; background-position:90% 50%; border:none; border-radius:20px; font-size:115%; font-weight:bold; vertical-align:top;}
+.searchTxtWrap .topSearchBar .search input.text {width:99%; height:100%; padding:0 140px 0 90px; background:#fff; border:3px solid #1d4da4; border-radius:20px; font-size:110%; line-height:40px; font-weight:bold; vertical-align:top;}
+.searchTxtWrap .topSearchBar .search .btnSearchGo {position:relative; width:140px; height:100%; margin-left:-145px; background:#1d4da4; border-radius:20px; color:#fff; font-size:125%; font-weight:bold; text-align:center; vertical-align:top;}
+.searchTxtWrap .topSearchBar .search .btnSearchGo:before {content:''; width:26px; height:27px; background:url('../../../../img/sp_ico_header.png') no-repeat -120px -60px;}
+.searchTxtWrap .searchCheck {display:inline-block;}
+.searchTxtWrap .tableCol {margin-top:30px; border-top:1px solid #bbb; border-bottom:1px solid #bbb;}
+.searchTxtWrap .tableCol th, .searchTxtWrap .tableCol td {border:1px solid #ddd; padding:10px; box-sizing:border-box;}
+.searchTxtWrap .tableCol tbody th {height:40px;}
+.searchTxtWrap .tableCol tbody td {height:60px;}
+.searchTxtWrap .tableCol > tbody > tr:first-child > td {border-top:1px solid #ddd;}
+.searchTxtWrap .h5Bl strong {color:#1d4da4; font-size:24px;}
+.searchTxtWrap .searchSection {margin-top:60px; border-top:3px solid #eee;}
+.searchTxtWrap .searchSection.first {margin-top:20px;}
+.searchTxtWrap .searchSection .h6Bl strong {color:#1d4da4;}
+.searchTxtWrap .searchResult > li {padding:20px 0 15px;border-top:1px solid #ddd;}
+.searchTxtWrap .searchResult > li:first-child {border:0;}
+.searchTxtWrap .searchResult span {display:block;}
+.searchTxtWrap .searchResult a {text-decoration:none;}
+.searchTxtWrap .searchResult a:hover .tit, .searchTxtWrap .searchResult a:focus .tit {text-decoration:underline;}
+.searchTxtWrap .searchResult .tit {font-size:130%; font-family:'NanumSquare', '나눔스퀘어', '돋움', Dotum, Helvetica, Arial, Sans-serif;}
+.searchTxtWrap .searchResult .date {margin-top:10px; font-size:90%; color:#999;}
+
+/* 제안목록 */
+.suggestNoticeBar {margin-bottom:1.786em; background:#396dd8 url('../../../../image/bg.png') no-repeat;}
+.suggestNoticeBar .suggestNoticeList {max-width:1000px; margin:0 auto;}
+.suggestNoticeBar .suggestNoticeList:after {display:block; content:""; clear:left;}
+.suggestNoticeBar .suggestNoticeList > li {float:left; width:25%; border-left:1px dotted #fff; color:#fff; font-size:140%; box-sizing:border-box;}
+.suggestNoticeBar .suggestNoticeList > li:first-child {border:0;}
+.suggestNoticeBar .suggestNoticeList > li .inner {display:block; position:relative;}
+.suggestNoticeBar .suggestNoticeList > li .inner:before {display:inline-block; content:''; background:url(../../../../image/ico_noticeBar.png) no-repeat 0 9999px;}
+.suggestNoticeBar .suggestNoticeList > li.suggest .inner:before {background-position:0 0;}
+.suggestNoticeBar .suggestNoticeList > li .count {display:inline-block; margin-top:-3px;}
+.suggestList {margin-left:-20px;}
+.suggestList > li {box-sizing:border-box;}
+.suggestList > li a {display:block; position:relative; margin:0 0 20px 20px; padding:15px 15px 45px; border:1px solid #ddd; border-radius:7px; color:#666; text-decoration:none;}
+.suggestList > li a:hover .tit, .suggestList > li a:focus .tit {text-decoration:underline;}
+.suggestList > li .tit {display:block; color:#333; font-size:130%; font-weight:bold; font-family:'NanumSquare', '나눔스퀘어', '돋움', Dotum, Helvetica, Arial, Sans-serif; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.suggestList > li .txt {display:block; overflow: hidden; height:2.3em; line-height:1.2em;}
+.suggestList > li .suggesterMark {display:inline-block; position:absolute; left:15px; bottom:13px; padding:2px 4px; border-radius:1px; color:#fff; font-size:12px;}
+.suggestList > li .iconsGroup {position:absolute; right:15px; bottom:13px;}
+.suggestList > li .iconsGroup > span{display:inline-block; margin-left:15px;}
+.suggestList > li .iconsGroup > span:before {content:''; display: inline-block; width:20px; height:20px; margin-right: 3px; background: url(../../../../image/ico_list.png) no-repeat 0 9999px; vertical-align: top;}
+.suggestList > li .iconsGroup > span.viewCount:before {background-position: 0 0;}
+.suggestList > li .iconsGroup > span.likeCount:before {background-position: -20px 0;}
+.suggestList > li .iconsGroup > span.commentCount:before {background-position: -40px 0;}
+
+/* sns 민원소통 현황 */
+.snsMinwonTalkList li {margin-bottom:20px; padding:13px; border:1px solid #ccc; border-radius:6px; background-color:#f5f5f5;}
+.snsMinwonTalkList li:after {display:block; content:""; clear:left;}
+.snsMinwonTalkList li .talkItem {background-color:#f5f5f5; box-sizing:border-box;}
+.snsMinwonTalkList li .talkItem a {display:block; overflow:hidden; height:100px; padding:10px; background-color:#fff; font-size:115%; box-sizing:border-box;}
+.snsMinwonTalkList li .talkItem .snsTalkTitTxt {height:45px; font-weight:bold;}
+.snsMinwonTalkList li .talkItem.ask .snsTalkTitTxt .talkSocialIcon {display:inline-block; width:31px; height:31px; margin-right: 5px; background:url('../../../../image/sp_ico_sns.png') no-repeat 0 9999px; text-indent: -9999px; vertical-align: middle;}
+.snsMinwonTalkList li .talkItem.ask .snsTalkTitTxt.talkTwitter {color:#18a9e4;}
+.snsMinwonTalkList li .talkItem.ask .snsTalkTitTxt.talkFacebook {color:#39569f;}
+.snsMinwonTalkList li .talkItem.ask .snsTalkTitTxt.talkTwitter .talkSocialIcon {background-position: 0 -60px;}
+.snsMinwonTalkList li .talkItem.ask .snsTalkTitTxt.talkFacebook .talkSocialIcon {background-position: -60px -60px;}
+.snsMinwonTalkList li .talkItem.ask .snsTalkTitTxt.talkKakao .talkSocialIcon {background-position: -120px -60px;}
+.snsMinwonTalkList li .talkItem.ask .snsTalkTitTxt.talkBlog .talkSocialIcon {background-position: -180px -60px;}
+
+
+.snsMinwonTalkList li .talkItem.ask .snsTalkTitTxt .date {float:right; margin:5px 0; color:#333;}
+.snsMinwonTalkList li .talkItem.answer .snsTalkTitTxt {position:relative; color:#1e4da4; font-weight:bold; font-size:115%;}
+.snsMinwonTalkList li .talkItem.answer .snsTalkTitTxt .snsProcessMark {display:inline-block; margin-right:5px; padding:3px 5px; border-radius:2px; background-color:#1e4da4; color:#fff; font-size:85%; font-weight:normal;}
+.snsMinwonTalkList li .talkItem.answer .snsTalkTitTxt .logo {position:absolute; right:0; top:-9px; display:inline-block; width:86px; height:45px; background:url('../../../../image/logo.png') no-repeat; text-indent: -9999px;}
+
+/* 문자상담 */
+.adviceBgWrap .phoneWrap {background-color:#fff; box-sizing:border-box;}
+.adviceBgWrap .phoneWrap .tit {padding:15px; border-bottom:1px solid #e3e3e3; text-align:center; font-family: 'NanumSquare', '나눔스퀘어', '돋움', Dotum, Helvetica, Arial, Sans-serif; font-size:22px; font-weight:bold;}
+.adviceBgWrap .phoneWrap .receiverNum {margin:11px 15px; font-size:16px; font-weight:bold;}
+.adviceBgWrap .phoneWrap .receiverNum .busanSmsNum {margin-left:10px; color:#3a5ea1; font-size:20px;}
+.adviceBgWrap .phoneWrap .phoneWriteForm {padding:6px 15px 18px;background-color:#f3f3f3;}
+.adviceBgWrap .phoneWrap .phoneWriteForm .adviceCategory {width:100%; margin-bottom:7px;}
+.adviceBgWrap .phoneWrap .phoneWriteForm textarea {width:100%; height:238px; margin-bottom:7px;}
+.adviceBgWrap .phoneWrap .btnSendAdviceWrap {padding:15px;}
+
+/* 전화상담 예약신청 */
+
+.callconsult > .tabStyle > li {display:table;}
+.callconsult > .tabStyle > li > a {white-space:pre-line; line-height:110%; display:table-cell; vertical-align: middle; height:50px;}
+
+
+/* 민원편람 */
+.nbManualNavBar {margin-bottom:35px; margin-left:-11px;}
+.nbManualNavBar:after {display:block; content:""; clear:left;}
+.nbManualNavList {float:left; width:50%;}
+.nbManualNavList:after {display:block; content:""; clear:left;}
+.nbManualNavList > li {float:left; width:20%;}
+.nbManualNavList > li a {display: block; margin-left:11px; padding:8px; border:1px solid #ddd; border-radius:3px; color:#999; text-align:center; white-space: nowrap;}
+.nbManualNavList > li a:before {content: ''; display: block; width:50px; height:50px; margin:0 auto; background: url('../../../../image/ico_category01.png') no-repeat 0 9999px;}
+.nbManualNavList > li.active a {border:1px solid #1e4da4; background-color:#1e4da4; color:#fff;}
+.nbManualNavList > li.active a:before {background-image:url('../../../../image/ico_category02.png');}
+
+/* 나의민원보기 */
+.myNoticeBar {background:url('../../../../image/bg_02.png') no-repeat;}
+.myNoticeBar .suggestNoticeList > li.active {background-color:#1e4da4;}
+.myNoticeBar .suggestNoticeList > li a {text-decoration:none;}
+.myNoticeBar .suggestNoticeList > li a:hover .tit,.myNoticeBar .suggestNoticeList > li a:focus .tit {text-decoration:underline;}
+.myNoticeBar .suggestNoticeList > li .inner:before {background:url(../../../../image/ico_myBar.png) no-repeat 0 9999px;}
+
+/* 여권안내 */
+.minwon_tabmenu {width:100%; padding:20px; border-top:1px solid #ddd; border-bottom:1px solid #ddd; background-color: #f5f5f5; overflow: hidden; box-sizing: border-box;}
+.minwon_tabmenu ul li {float: left; display: inline-block; padding:5px 0;}
+.minwon_tabmenu ul li a {border-radius: 20px; background-color: #f5f5f5; padding:5px 15px;}
+.minwon_tabmenu ul li.active a,
+.minwon_tabmenu ul li a:hover {background-color: #396dd8; color:#fff; text-decoration: none;}
+
+.minwon_tabmenu5 {width:100%; padding:0 20px 20px; border-top:1px solid #ddd; border-bottom:1px solid #ddd; background-color: #f5f5f5; overflow: hidden;}
+.minwon_tabmenu5 h4 {clear: both; padding-top:20px;}
+.minwon_tabmenu5 ul {clear:both;overflow: hidden;padding: 0 20px;}
+.minwon_tabmenu5 ul li {float: left; display: inline-block; padding:5px 0;}
+.minwon_tabmenu5 ul li a {border-radius: 20px; background-color: #f5f5f5; padding:5px 15px;}
+.minwon_tabmenu5 ul li a.active,
+.minwon_tabmenu5 ul li a:hover {background-color: #396dd8; color:#fff; text-decoration: none;}
+
+#contents .content.minwon_subcont {display: none; padding-top:30px;}
+
+#contents .content .minwon_subsubcont1 {display: none; padding-top:30px;}
+#contents .content .minwon_subsubcont2 {display: none; padding-top:30px;}
+
+.minwon_tabmenu2 {border-top:1px dashed #ddd;text-align: left;background-color: #f5f5f5;padding: 20px;}
+.minwon_tabmenu2 h4 {clear: both;}
+.minwon_tabmenu2 ul {clear:both;overflow: hidden;padding: 0 20px;}
+.minwon_tabmenu2 ul li {float: left; display: inline-block; padding:5px 0;}
+.minwon_tabmenu2 a {border-radius: 20px; background-color: #f5f5f5; padding:5px 15px;display: inline-block;}
+.minwon_tabmenu2 h5 a {padding:0;display: inline-block;}
+.minwon_tabmenu2 a.active,
+.minwon_tabmenu2 a:hover {background-color: #333 !important; color:#fff !important; padding:5px 15px; text-decoration: none;}
+.minwon_tabmenu2 h5 {padding-top:20px;}
+.content .sub_title {padding:0;}
+
+/* 민원안내 > 민원정보 */
+.minwon_tablink {width:100%; padding:20px; border-top:1px solid #ddd; border-bottom:1px solid #ddd; background-color: #f5f5f5; overflow: hidden; box-sizing: border-box;}
+.minwon_tablink ul li {float: left; display: inline-block; padding:5px 0;}
+.minwon_tablink ul li a {border-radius: 20px; background-color: #f5f5f5; padding:5px 15px; display:inline-block; vertical-align:middle;}
+.minwon_tablink ul li.active a,
+.minwon_tablink ul li a:hover {background-color: #396dd8; color:#fff; text-decoration: none;}
+
+/*설문조사*/
+.boxGuide {width:auto; height:100%; line-height:2.0em !important; margin-bottom:25px; padding:1.0em; border:3px solid #1e4da4; font-weight:bold;}
+
+#loading2 {position: fixed; top: 50%; left: 50%; transform:translate(-50%,-50%); background-position: 0 -108px; opacity: 0.8; z-index: 9999; }
+
+/* 여권민원 대기현황 */
+.standByCount {max-width:800px; margin:0 auto; font-family: 'NanumSquare', 'sans-serif';}
+.standByCount:after {content:""; display:block; clear:both;}
+.standByCount .countItem {float:left; width:calc(50% - 10px); border:1px solid #ccc; margin-left:20px; padding:10px; box-sizing: border-box;}
+.standByCount .countItem:first-of-type {margin-left:0;}
+.standByCount .countItem .tit {font-size:1.6em; text-align: center; background:#396dd8; color:#fff; padding:15px; line-height:1; font-weight:bold;}
+.standByCount .countItem:nth-of-type(2) .tit {background:#ff3d3d;}
+.standByCount .countItem .count {text-align: center; font-size: 1.4em; padding:30px 0 0;}
+.standByCount .countItem .count .state {background:#f5f5f5; margin-top:30px; padding: 30px; line-height:1;}
+.standByCount .countItem .count .state strong {height:1em; font-size: 2.4em; margin-right:5px; display:inline-block; overflow:hidden; position:relative; vertical-align:middle;}
+.standByCount .countItem .count .state strong > span {display:block; height:inherit;}
+.standByCount .countItem:first-of-type .count .state strong {color:#396dd8;}
+.standByCount .countItem:nth-of-type(2) .count .state strong {color:#ff3d3d;}
+
+#pageSatisfy .manager h3 {width:145px;}
+
+.standByCount02 {display:flex; width: 1200px; margin:0 auto; font-family: 'NanumSquare', 'sans-serif';flex-wrap: wrap;justify-content: space-between;}
+.standByCount02 .countItem {max-width:  32.0%; flex: 0 0 32.0%; padding:10px; margin: 10px 0; border:1px solid #ccc;box-sizing: border-box;}
+.standByCount02 .countItem .tit {font-size:1.6em; text-align: center; background:#396dd8; color:#fff; padding:15px; line-height:1; font-weight:bold;}
+.standByCount02 .countItem .tit {background:#ff3d3d;}
+.standByCount02 .countItem:first-of-type .tit {background:#396dd8;}
+.standByCount02 .countItem .count {text-align: center; font-size: 1.4em; padding:30px 0 0;}
+.standByCount02 .countItem .count .state {background:#f5f5f5; margin-top:30px; padding: 30px; line-height:1;}
+.standByCount02 .countItem .count .state strong {height:1em; font-size: 2.4em; margin-right:5px; display:inline-block; overflow:hidden; position:relative; vertical-align:middle;}
+.standByCount02 .countItem .count .state strong > span {display:block; height:inherit;}
+.standByCount02 .countItem:first-of-type .count .state strong {color:#396dd8;}
+.standByCount02 .countItem .count .state strong {color:#ff3d3d;}
+
+.standByCount02 .countwrap {display: flex;justify-content: space-between;}
+.standByCount02 .countwrap.eq01 .count {flex: 0 0 100%; max-width: 100%;}
+.standByCount02 .countwrap.eq02 .count {flex: 0 0 48%; max-width: 48%;}
+
+@media screen and (max-width: 1199px){
+	.standByCount02 {width: 100%;}
+	.standByCount02 .countItem {max-width:  49.0%; flex: 0 0 49.0%;}
+}
+@media screen and (max-width: 767px){
+	.standByCount02 .countItem {max-width: 100%; flex: 0 0 100%;}
+}
+
+@media all and (max-width:1024px) { /* mobile & tablet ver */
+
+	#container .containerInnr {padding:20px 20px 82px;}
+	#container .containerInnr.wideType1 {padding:0 0 82px;}
+	#container .containerInnr.wideType1 .contentsInnrWrap {padding:0 20px;}
+	
+	#location .locationInner {padding:6px 20px;}
+	#location ul.shareArea {margin-right:-4px;}
+
+	.titPage {font-size:1.8em;}
+	
+	/*상담예약신청*/
+	.tabStyle2 > li {display:block; float:left; width:49.5%;}
+	.tel_step .step {width:47%;}
+	.tel_step .step:nth-child(3) {margin:35px 0 0 0;} 
+	.tel_step .step:nth-child(4) {margin:35px 0 0 35px;} 
+	
+	/* 민원검색 */
+	.searchTxtWrap .searchCheck {display:block; padding:5px 0 0 15px;}
+	.searchTxtWrap .topSearchBar {right:0; left:0; margin-left:auto; margin-right:auto;}
+
+	/* 제안목록 */
+	.suggestNoticeBar {background-position:center;}
+
+	/* 민원편람 */
+	.nbManualNavBar {margin-left:-5px;}
+	.nbManualNavList > li a {margin-left:5px; padding:2px; font-size:85%;}
+
+	/* 나의민원보기 */
+	.myNoticeBar {background-position:center;}
+
+}
+/* //mobile & tablet ver end */
+
+@media all and (max-width: 1280px) {
+	/* 전화상담 예약신청 */	
+	.callconsult > .tabStyle > li { width: 33.33%;}
+}
+
+
+@media all and (max-width: 960px) {
+	/* 전화상담 예약신청 */
+	.callconsult > .tabStyle > li { width: 50%;}
+}
+
+
+@media all and (max-width:768px) { /* mobile ver */
+	#container .containerInnr {padding:20px 10px 64px;}
+	#container .containerInnr.wideType1 {padding:0 0 64px;}
+	#container .containerInnr.wideType1 .contentsInnrWrap {padding:0 10px;}
+	
+	#location {border-bottom:0;}
+	#location .locationInner {padding:6px 10px;}
+	#location .lineMap {display:none;}
+	
+	.titPage {font-size:1.5em;}
+	
+	/*상담예약신청*/
+	.tabStyle2 {position: relative; min-height:60px; width:100%;}
+	.tabStyle2 > li { width:100%;}
+	.tel_step .step{width:99%;}
+	.tel_step .step:nth-child(2) {margin:35px 0 0 0;}
+	.tel_step .step:nth-child(4) {margin:35px 0 0 0;}
+	
+	/* 민원검색 */
+	.searchTxtWrap .topSearchBar {width:100%;}
+	.searchTxtWrap .topSearchBar .search {width:100%; height:34px;}
+	.searchTxtWrap .topSearchBar .search select {width: 80px; margin-right:-85px; padding:0 20px 0 15px; background-position:100% 50%;}
+	.searchTxtWrap .topSearchBar .search input.text {padding:0 70px 0 84px; line-height:29px;}
+	.searchTxtWrap .topSearchBar .search .btnSearchGo {width:70px; margin-left:-75px; text-indent:-9999px;}
+	.searchTxtWrap .topSearchBar .search .btnSearchGo:before {position:absolute; top:50%; left:50%; margin:-13px 0 0 -13px;transform:scale(0.7); -webkit-transform:scale(0.7);-ms-transform:scale(0.7);-moz-transform:scale(0.7);}
+	.searchTxtWrap .h5Bl strong {font-size:18px;}
+	.searchTxtWrap .searchSection.first {margin-top:5px;}
+
+	/* 제안목록 */
+	.suggestNoticeBar .suggestNoticeList > li { font-size:12px; text-align:center;}
+	.suggestNoticeBar .suggestNoticeList > li .inner {padding:5px 5px 20px;}
+	.suggestNoticeBar .suggestNoticeList > li .inner:before {width:39px; height:40px; background-size:160px auto; vertical-align: bottom;}
+	.suggestNoticeBar .suggestNoticeList > li.comment .inner:before {background-position:-40px 0;}
+	.suggestNoticeBar .suggestNoticeList > li.vote .inner:before {background-position:-80px 0;}
+	.suggestNoticeBar .suggestNoticeList > li.feedback .inner:before {background-position:-120px 0;}
+	.suggestNoticeBar .suggestNoticeList > li .tit {position:absolute; left:0; right:0; bottom:3px; font-size:10px;}
+	.suggestNoticeBar .suggestNoticeList > li strong {font-size:18px;}
+	.suggestList > li {width:100%;}
+	.suggestList > li .iconsGroup > span {margin-left:10px;}
+
+	/* sns 민원소통 현황 */
+	.snsMinwonTalkList li {padding:8px;}
+	.snsMinwonTalkList li .talkItem {width:100%;}
+	.snsMinwonTalkList li .talkItem a {margin-top:8px;}
+	.snsMinwonTalkList li .talkItem.ask {padding-bottom:8px;}
+	.snsMinwonTalkList li .talkItem.answer {padding-top:8px; border-top:1px solid #e0e0e0;}
+	.snsMinwonTalkList li .talkItem.answer .snsTalkTitTxt .logo {top:-6px; width:70px; height:35px; background-size:72px auto;}
+
+	/* 문자상담 */
+	.adviceBgWrap .phoneWrap .tit {display:none;}
+
+	/* 민원편람 */
+	.nbManualNavBar {margin-bottom:10px;}
+	.nbManualNavList {width:100%; margin-top:11px}
+	.nbManualNavList > li a:before {background-size:95% auto; width:40px; height:35px;}
+	.nbManualNavList > li a.total:before {background-position: 0 0;}
+	.nbManualNavList > li a.traffic:before {background-position: 0 -38px;}
+	.nbManualNavList > li a.water:before {background-position: 0 -78px;}
+	.nbManualNavList > li a.welfare:before {background-position: 0 -116px;}
+	.nbManualNavList > li a.build:before {background-position: 0 -153px;}
+	.nbManualNavList > li a.tour:before {background-position: 0 -192px;}
+	.nbManualNavList > li a.environment:before {background-position: 0 -230px;}
+	.nbManualNavList > li a.safety:before {background-position: 0 -268px;}
+	.nbManualNavList > li a.economy:before {background-position: 0 -307px;}
+	.nbManualNavList > li a.etc:before {background-position: 0 -343px;}
+
+	/* 나의민원보기 */
+	.myNoticeBar .suggestNoticeList > li .inner:before {background-size: 160px auto;}
+
+	/* 전화상담 예약신청 */
+	.callconsult > .tabStyle > li { width:100%;}
+	.callconsult > .tabStyle > li > a {white-space:normal; width:100%;}
+	.callconsult > .tabStyle:hover > li {display: table;}
+
+}
+/* //mobile ver end */
+
+@media all and (min-width:768px) { /* tablet & pc ver */
+	
+	/* 민원검색 */
+	.searchTxtWrap .topSearchBar .search .btnSearchGo:before {display:inline-block; margin-right:3px; vertical-align:middle; transform:scale(0.9); -webkit-transform:scale(0.9);-ms-transform:scale(0.9);-moz-transform:scale(0.9);}
+
+	/* 제안목록 */
+	.suggestNoticeBar .suggestNoticeList > li .inner {padding:22px 0 12px 118px;}
+	.suggestNoticeBar .suggestNoticeList > li .inner:before {position:absolute; top:50%; left:40px; width:74px; height:68px; margin-top:-34px;}
+	.suggestNoticeBar .suggestNoticeList > li.comment .inner:before {background-position:-70px 0;}
+	.suggestNoticeBar .suggestNoticeList > li.vote .inner:before {background-position:-140px 0;}
+	.suggestNoticeBar .suggestNoticeList > li.feedback .inner:before {background-position:-210px 0;}
+	.suggestNoticeBar .suggestNoticeList > li .tit {display: block; font-size:14px;}
+	.suggestNoticeBar .suggestNoticeList > li strong {font-size:36px;}
+	.suggestList:after {display:block; content:""; clear:left;}
+	.suggestList > li {float:left; width:50%;}
+
+	/* sns 민원소통 현황 */
+	.snsMinwonTalkList li .talkItem {float:left; width:50%;}
+	.snsMinwonTalkList li .talkItem.ask {padding-right:24px;}
+	.snsMinwonTalkList li .talkItem.answer {padding-left:24px; border-left:1px solid #e0e0e0;}
+
+	/* 문자상담 */
+	.adviceBgWrap {position:relative; height:919px; background:url('../../../../image/advice_bg.jpg') no-repeat 50% 0;}
+	.adviceBgWrap .phoneWrap {position:absolute; top:147px; left:50%; min-width:318px; margin-left:-176px;}
+
+	/* 민원편람 */
+	.nbManualNavList > li a.total:before {background-position: 0 0;}
+	.nbManualNavList > li a.traffic:before {background-position: 0 -50px;}
+	.nbManualNavList > li a.water:before {background-position: 0 -100px;}
+	.nbManualNavList > li a.welfare:before {background-position: 0 -150px;}
+	.nbManualNavList > li a.build:before {background-position: 0 -200px;}
+	.nbManualNavList > li a.tour:before {background-position: 0 -250px;}
+	.nbManualNavList > li a.environment:before {background-position: 0 -300px;}
+	.nbManualNavList > li a.safety:before {background-position: 0 -350px;}
+	.nbManualNavList > li a.economy:before {background-position: 0 -400px;}
+	.nbManualNavList > li a.etc:before {background-position: 0 -450px;}
+
+	/* 나의민원보기 */
+	.myNoticeBar .suggestNoticeList > li .inner:before {background:url(../../../../image/ico_myBar.png) no-repeat 0 9999px;}
+}
+/* //tablet & pc ver end */
+
+@media all and (min-width:768px) and (max-width:1023px) { /* tablet ver */
+	/* 민원검색 */
+	.searchTxtWrap .topSearchBar {width:525px;}
+	.searchTxtWrap .searchSection.first {margin-top:10px;}
+
+	/* 제안목록 */
+	.suggestNoticeBar .suggestNoticeList > li .inner {padding:25px 0 9px 98px;}
+	.suggestNoticeBar .suggestNoticeList > li .inner:before {left:25px;}
+
+}
+/* //tablet ver end */
+
+@media all and (min-width:1024px) { /* pc ver */#container .containerInnr {max-width:1200px; margin:0 auto; padding:47px 0 82px;}
+	#container .containerInnr.wideType1 {max-width:100%; padding-top:0;}
+	#container .containerInnr.wideType1 .contentsInnrWrap {max-width:1200px; margin:0 auto;}
+	#location .locationInner {max-width:1200px; margin:0 auto;}
+	
+	.titPage {font-size:2em;}
+	
+	/*상담예약신청*/
+	.tabStyle2 > li {width:25%;}
+	
+	/* 제안목록 */
+	.suggestNoticeBar {background-size:100% 100%;}
+
+	/* 나의민원보기 */
+	.myNoticeBar {background-size:100% 100%;}
+}
+/* //pc ver end */
+
+
+/* 부산민원120 > 시민참여 > 국민생각함 */
+.tabStyle {margin-bottom:0; margin-top:0 !important; border-bottom:0;}
+.thumbListType1 > li .thumb {height:230px; overflow:hidden;}
+.thumbListType1 > li .thumb > .picket {position: absolute; top:0; left:0; background:rgba(0,0,0,.8); color:#fff; font-size:1em; font-weight:bold; padding:5px 10px; line-height:1; z-index:1;}
+.thumbListType1 > li .thumb > img {max-width:none; width:auto; height:auto; min-width:100%; min-height:100%; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); transition: all 1s;}
+.thumbListType1 > li > a.item:hover .thumb > img,
+.thumbListType1 > li > a.item:focus .thumb > img {transform: translate(-50%, -50%) scale(1.1); } 
+.thumbListType1 > li > a.item:hover .titBar .tit,
+.thumbListType1 > li > a.item:focus .titBar .tit {text-decoration:none;}
+.thumbListType1 > li .titBar {position:relative;}
+.thumbListType1 > li .titBar .titTag {display:inline;}
+.thumbListType1 > li .titBar .txtR {overflow:visible; width: auto; position: absolute; bottom:15px; right:15px;}
+.thumbListType1 > li .titBar .txtR > span {padding:3px 7px; color:#fff; border-radius:30px; background:#666;}
+.boxStyle {margin-top:0; padding:20px; background:#fff; position: relative;}
+.listStyle .think_btn:before {background:none;} 
+/*.boxStyle .button {position: absolute; right:20px; bottom:20px;}*/
+
+@media all and (min-width:1024px){
+	.tabStyle, .tabStyle2 {margin-top:0;}
+}
+
+@media all and (min-width:769px){
+	.boxStyle:after {content:""; clear:both; display:block;}
+	.boxStyle > div {float:left; width: 220px; box-sizing: border-box;}
+	.boxStyle > ul {float:left; width: calc(100% - 220px); box-sizing: border-box;}
+}
+
+@media all and (max-width:1023px){
+	.boxStyle {padding-bottom:80px;}
+}
+.h4Bl {clear: both;}
+.boxStyle .btn-box-group {float: none;width: 100%;text-align: right;}
+
+/* 부산민원120 > 시민참여 > 국민생각함 end*/
+
+/* 여권접수 온라인 사전예약 */
+
+#calendar .table td {height: 80px; text-align: left;}
+
+span.spanRed {color: red;}
+
+#calendar .calendarHeader {position:relative; width:250px; margin:0 auto;}
+.calendarHeader .btnMonth {position:absolute; top:0; width:10px;height:17px;}
+.calendarHeader .btnMonth > span {display:block; position:relative; text-indent:-9999px; font-size:0;}
+.calendarHeader .btnMonth > span:after {display:block; content:""; position:absolute; top:8px; width:10px; height:17px; background:url('../../../../image/bg_calendar_arrow.png') no-repeat;}
+.calendarHeader .btnMonth.prev {left:0;}
+.calendarHeader .btnMonth.next {right:0;}
+.calendarHeader .btnMonth.next > span:after {background-position:0 -27px;}
+.calendarHeader .currentDayInfo {text-align:center;}
+.calendarHeader .currentDayInfo .currentMonth {font-weight:bold; font-size:171%;}
+
+.button.color.disabled {border:1px solid #aaa; color:#fff; background-color:#aaa;cursor: default;}
+
+.layPop label{position: relative;vertical-align:middle}
+.layPop{position:fixed;top:0;left:0;padding:45px 20px;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:800}
+.layPop .popCon{position:absolute;top:55%;left:50%;width:100%;max-width:650px;height:640px;font-size:14px;overflow:auto;background:#f4f4f4;border:1px solid #d7d7d7;border-radius:5px;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);}
+.layPop .popCon dl dt{padding-left:15px;font-size:18px;font-weight:500;line-height:47px}
+.layPop .popCon dl dt .btnView{display:inline-block;margin-left:10px}
+.layPop .popCon dl dt .btnView a{display:block;padding:0 10px;font-size:12px;color:#fff;font-weight:400;line-height:21px;background:#f4a643;border-radius:10px}
+.layPop .popCon dl dt .btnView a{background:#c9c9c9;}
+.layPop .popCon dl dd{padding:0 15px 10px;border-bottom:1px solid #bcbcbc}
+.layPop .popCon dl dd.viewCon{height:200px;color:#555;overflow:auto;background:#fff}
+.layPop .popCon dl dd.viewCon h3{margin:10px 0 5px}
+.layPop .popCon dl dd.viewCon ul{margin-left:15px}
+.layPop .popCon dl dd.viewCon ul li{position:relative;padding-left:6px}
+.layPop .popCon dl dd.viewCon ul li::before{position:absolute;top:0;left:0;content:'-'}
+.layPop .popCon dl dd .txt1{padding-left:25px}
+.layPop .popCon dl dd .t_typelA thead th,
+.layPop .popCon dl dd .t_typelA tbody th,
+.layPop .popCon dl dd .t_typelA tbody td{padding:8px 5px}
+.layPop .popCon dl dt + dd.viewCon{display:block}
+.layPop .popCon dl dt + dd + dd{padding-top:10px}
+.layPop .popCon .txt2{padding:25px 15px}
+.layPop .popCon .btn{position:relative;padding:0 15px}
+.layPop .popCon .btn .white{float:right}
+
+.layPop .td_left tbody td{text-align:left}
+.layPop .td_right tbody td{text-align:right}
+.layPop .th_left tbody th{text-align:left}
+.layPop .t_typelA{line-height:1.4;border-top:1px solid #333; width: 100%;}
+.layPop .t_typelA tr{text-align:center;}
+.layPop .t_typelA thead th{padding:20px 10px;color:#111;font-weight:400;word-break:keep-all;background:#fafafa;border-bottom:1px solid #ddd;border-left:1px solid #eee}
+.layPop .t_typelA tbody th{padding:20px 10px;color:#555;font-weight:400;background:#fafafa;border-bottom:1px solid #eee;border-right:1px solid #eee}
+.layPop .t_typelA tbody td{padding:20px 10px;color:#555;background:#fff;border-bottom:1px solid #eee;border-left:1px solid #eee}
+.layPop .t_typelA thead th:first-child,
+.layPop .t_typelA tbody td:first-child{border-left:0}
+.layPop .t_typelA tbody td input.textForm{height:1.8em}
+.layPop .btnBc{display:inline-block;margin:1px;vertical-align:middle;}
+.layPop .btnBc a,
+.layPop .btnBc button,
+.layPop .btnBc input{position:relative; margin:0; display:-moz-inline-stack; display:block;padding:0 20px;min-width:110px;font-size:15px;color:#fff;line-height:50px;font-weight:400;text-align:center;text-decoration:none;background-color:#565656;cursor:pointer;transition: all 0.3s;border-radius:0;border:0}
+.layPop .btnBc.white a,
+.layPop .btnBc.white button,
+.layPop .btnBc.white input{color:#222;line-height:48px;background:#fff;border:1px solid #ccc}

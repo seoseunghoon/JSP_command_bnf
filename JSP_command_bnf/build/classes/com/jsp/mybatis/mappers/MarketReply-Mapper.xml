@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="MarketReply-Mapper">
+	
+	
+	<select id="selectReplyListByBno" resultType="marketReply">
+		select
+		*
+		from marketReply
+		where bno = #{bno}
+	</select>
+	
+	<select id ="selectReplyByRno" parameterType="int" resultType="marketReply">
+		select *
+		from marketReply
+		where rno = #{rno}
+	</select>
+	
+	<update id="insertReply" parameterType="marketReply">
+		insert into marketReply(rno,id,bno,replyText)
+		values(MarketReply_seq.nextval,#{id},#{bno},#{replyText})
+	</update>
+	
+	<update id="updateReply" parameterType="marketReply">
+		update marketReply
+		set replyText=#{replyText}
+		where rno = #{rno}
+	</update>
+	
+	
+	<update id="deleteReply" parameterType="int">
+		delete
+		from marketReply
+		where rno = #{rno}
+	</update>
+	
+	<update id="deleteAllReply" parameterType="int">
+		delete
+		from marketReply
+		where bno = #{bno}
+	</update>
+</mapper>
+
+
+
+
+
+
+

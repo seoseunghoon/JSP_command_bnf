@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ComplainBoard-Mapper">
+
+	<sql id="search">
+	
+		<if test="searchType == 't'.toString()">
+			and title like '%'||#{keyword}||'%'			
+		</if>
+		
+		<if test="searchType == 'w'.toString()">
+			and writer like '%'||#{keyword}||'%'			
+		</if>
+		
+		<if test="searchType == 'c'.toString()">
+			and content like '%'||#{keyword}||'%'			
+		</if>
+		
+		<if test="searchType == 'tc'.toString()">
+			and (
+			title like '%'||#{keyword}||'%'
+			or
+			content like '%'||#{keyword}||'%'						
+			)			
+		</if>
+		
+		<if test="searchType == 'cw'.toString()">
+			and (
+			writer like '%'||#{keyword}||'%'
+			or
+			content like '%'||#{keyword}||'%'						
+			)			
+		</if>
+		
+		<if test="searchType == 'tcw'.toString()">
+			and (
+			title like '%'||#{keyword}||'%'
+			or
+			writer like '%'||#{keyword}||'%'
+			or
+			content like '%'||#{keyword}||'%'						
+			)			
+		</if>
+		
+	</sql>
+	
+	<select id="selectSearchComplainBoardList" resultType="complainBoard">
+		select
+		*
+		from
+		complainBoard
+		where bno is not null  			  	
+		<include refid="search" />
+		order by bno desc
+	</select>
+	
+	<select id="selectSearchComplainBoardListCount"  resultType="int">
+		select
+		count(*)
+		from
+		complainBoard
+		where bno is not null  			  	
+		<include refid="search" />
+		order by bno desc
+	</select>
+	
+	<update id="insertComplainBoard">
+		insert 
+		into 
+		complainBoard(bno,title,writer,content)
+		values
+		(#{bno},#{title},#{writer},#{content})
+	</update>
+	
+	<select id="selectComplainBoardSeqNext" resultType="int">
+		select ComplainBoard_seq.nextval as bno from dual
+	</select>
+	
+	<select id="selectComplainBoardByBno"  resultType="complainBoard">
+		select * 
+		from complainBoard 
+		where bno=#{bno}
+	</select>
+	
+	<update id="increaseViewCnt" parameterType="int">
+		update 
+		complainBoard 
+		set 
+		viewcnt=viewcnt+1 
+		where bno=#{bno}
+	</update>
+	
+	<update id="updateComplainBoard" parameterType="complainBoard">
+		update 
+		complainBoard
+		set 
+		title=#{title}, content=#{content}, updatedate=sysdate 
+		where bno=#{bno}
+	</update>
+	
+	<update id="deleteComplainBoard" parameterType="int">
+		delete 
+		from complainBoard 
+		where bno=#{bno}
+	</update>
+	
+</mapper>

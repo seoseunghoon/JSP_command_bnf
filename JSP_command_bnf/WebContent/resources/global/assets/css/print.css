@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+* {font-family: Dotum, sans-seirf !important;}
+header, #header, footer, #footer, #location, nav, #sideNav {display: none !important;}
+#container {margin:0 !important; padding:0 !important;}
+#contents {margin:0 !important; padding:0 !important;}
+#pageSatisfy, #lv-container, #replyNotice {display:none !important;}
+
+.srcoll-table:before, .srcoll-table:after {display:none !important;}
+.srcoll-table table {width:100% !important;}

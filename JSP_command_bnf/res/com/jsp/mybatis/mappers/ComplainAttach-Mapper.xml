@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ComplainAttach-Mapper">
+
+	<select id="selectComplainAttachByBno" resultType="ComplainAttach">
+		select * 
+		from complainAttach
+		where bno = #{bno}
+	</select>	
+	
+	<select id="selectComplainAttachByAno" resultType="ComplainAttach">
+		select *
+		from complainAttach
+		where ano=#{ano}
+	</select>
+	
+	<update id="insertComplainAttach">
+		insert into 
+		complainAttach (ano, uploadpath, filename, filetype, bno, complainAttacher)
+		values (complainAttach_seq.nextval, #{uploadPath}, #{fileName},#{fileType}, 
+				#{bno},#{complainAttacher} )
+	</update>
+	
+	<update id="deleteComplainAttach">
+		delete from complainAttach where ano = #{ano}
+	</update>
+	
+	<update id="deleteAllComplainAttach">
+		delete
+		from complainAttach
+		where bno = #{bno}
+	</update>
+	
+</mapper>

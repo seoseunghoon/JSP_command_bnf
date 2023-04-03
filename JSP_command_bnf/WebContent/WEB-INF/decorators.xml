@@ -1,0 +1,26 @@
+<decorators defaultdir="/WEB-INF/decorator">
+	
+	
+	<decorator page="login_decorator.jsp" name="login">
+		<pattern>/login/*.do</pattern>
+	</decorator>
+	
+	<decorator name="board" page="board_decorator.jsp">
+		<pattern>/board/*/list.do</pattern>
+		<pattern>/manage.do</pattern>
+	</decorator>
+	
+	<decorator name="open" page="open_decorator.jsp">
+		<pattern>/board/*/detail.do</pattern>
+		<pattern>/board/*/modifyForm.do</pattern>
+		<pattern>/board/*/registForm.do</pattern>
+		
+	</decorator>
+	
+	
+	<excludes>
+		<pattern>/resources/*</pattern>
+		<pattern>/main.do</pattern>
+	</excludes>
+	
+</decorators>

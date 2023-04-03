@@ -1,0 +1,71 @@
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<properties resource="com/jsp/properties/jdbc.properties" />
+
+	<typeAliases>
+		<typeAlias type="java.lang.String" alias="str" />
+		<typeAlias type="java.lang.Integer" alias="int" />
+
+		<typeAlias type="com.jsp.dto.MemberVO" alias="member" />
+		
+		<typeAlias type="com.jsp.dto.CollusionBoardVO" alias="collusionBoard" />
+		<typeAlias type="com.jsp.dto.CollusionAttachVO" alias="collusionAttach" />
+		
+		<typeAlias alias="marketBoard" type="com.jsp.dto.MarketBoardVO"/>
+		<typeAlias alias="marketAttach" type="com.jsp.dto.MarketAttachVO"/>
+		<typeAlias alias="marketReply" type="com.jsp.dto.MarketReplyVO"/>
+        
+        <typeAlias type="com.jsp.dto.ReportAttachVO" alias="reportAttach" /> 
+		<typeAlias type="com.jsp.dto.ReportBoardVO" alias="reportBoard" />
+        
+        
+        <typeAlias type="com.jsp.dto.EventBoardVO" alias="eventBoard" />
+        
+        <typeAlias type="com.jsp.dto.CitizenBoardVO" alias="citizenBoard" />	
+		<typeAlias type="com.jsp.dto.CitizenAttachVO" alias="citizenAttach" />
+		<typeAlias type="com.jsp.dto.ComplainBoardVO" alias="complainBoard" />
+		<typeAlias type="com.jsp.dto.ComplainAttachVO" alias="complainAttach" />
+        
+        
+	</typeAliases>
+	
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${jdbc.driverClassName}" />
+				<property name="url" value="${jdbc.url}" />
+				<property name="username" value="${jdbc.username}" />
+				<property name="password" value="${jdbc.password}" />
+
+				<!-- pool setting -->
+				<property value="2" name="poolMaximumActiveConnections" />
+				<property value="2" name="poolMaximumIdleConnections" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="com/jsp/mybatis/mappers/Member-Mapper.xml" />
+ 		<mapper resource="com/jsp/mybatis/mappers/CollusionBoard-Mapper.xml" />
+		<mapper resource="com/jsp/mybatis/mappers/CollusionAttach-Mapper.xml" />
+		
+		<mapper resource="com/jsp/mybatis/mappers/MarketBoard-Mapper.xml"/>
+		<mapper resource="com/jsp/mybatis/mappers/MarketAttach-Mapper.xml"/>
+		<mapper resource="com/jsp/mybatis/mappers/MarketReply-Mapper.xml"/>
+		
+		
+		
+		<mapper resource="com/jsp/mybatis/mappers/EventBoard-Mapper.xml"/>
+		<mapper resource="com/jsp/mybatis/mappers/ReportAttach-Mapper.xml"/>
+		<mapper resource="com/jsp/mybatis/mappers/ReportBoard-Mapper.xml"/>
+		
+		<mapper resource="com/jsp/mybatis/mappers/CitizenBoard-Mapper.xml"/>
+		<mapper resource="com/jsp/mybatis/mappers/CitizenAttach-Mapper.xml"/>
+		<mapper resource="com/jsp/mybatis/mappers/ComplainBoard-Mapper.xml"/>
+		<mapper resource="com/jsp/mybatis/mappers/ComplainAttach-Mapper.xml"/>
+		
+	</mappers>
+</configuration>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+  <mapper namespace="ReportAttach-Mapper">
+	<select id="selectReportAttachesByPno" resultType="reportAttach">
+		select * 
+		from ReportAttach 
+		where Pno = #{Pno}
+	</select>	
+	
+	<select id="selectReportAttachByAno" resultType="reportAttach">
+		select *
+		from ReportAttach
+		where ano=#{ano}
+	</select>
+	
+	<update id="insertReportAttach">
+		insert into 
+		ReportAttach (ano, uploadpath, filename, filetype, Pno, attacher)
+		values (attach_seq.nextval, #{uploadPath}, #{fileName},#{fileType}, 
+				#{pno},#{attacher} )
+	</update>
+	
+	<update id="deleteReportAttach">
+		delete from ReportAttach where ano = #{ano}
+	</update>
+	
+	<update id="deleteReportAttachAllAttach">
+		delete 
+		from ReportAttach 
+		where Pno = #{Pno}
+	</update>
+</mapper>
